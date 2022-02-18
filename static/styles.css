@@ -1,0 +1,257 @@
+body {
+    padding-top: 80px;
+}
+
+/* ANIMATIONS */
+
+.navbar .nav-link:hover {text-decoration:underline;}
+.navbar .nav-item .dropdown-menu {display:none;}
+.navbar .nav-item:hover .dropdown-menu{ display:block;}
+
+.loaded .navbar {
+    animation: fadeIn 0.7s ease-in 0.5s forwards;
+}
+.loaded .container {
+    animation: fadeIn 1s ease-in 0.7s forwards;
+}
+.loaded .jumbotron {
+    animation: fadeIn 1s ease-in 0.7s forwards;
+}
+
+.loaded .jumbotron-fluid  {
+    animation: fadeIn 1s ease-in 0.7s forwards;
+}
+
+.loaded .card {
+    animation: fadeIn 1.5s ease-in 0.7s forwards;
+}
+
+@keyframes slideIn {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    60% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+/* NAV BAR */
+#logo {
+    border-style:solid;
+    border-radius:10px;
+    text-align:center;
+    margin-left: 2em;
+    padding-right: 1em;
+}
+.logo {
+    float:left;
+    padding-top: 2px;
+    margin-right: 8px;
+}
+
+ul {
+    margin-left: 1rem;
+    font-size: 19px;
+    font-weight: 400;
+    margin-top: -1px;
+}
+
+#subreddit {
+    display:flex;
+    padding: 8px 10px 0px 10px;
+}
+
+#subreddit p {
+    padding-left: 6px;
+    padding-top: 2px;
+}
+
+
+/* MAIN PAGE SEARCH BAR */
+#search_bar {
+    text-align:center;
+    padding: 3rem 3rem 1rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin: 2rem 12rem;
+    background-image: url("https://miro.medium.com/max/7418/1*YSvPYfd-T1y4oDqJRfgx7w.jpeg");
+}
+
+#search_bar h2 {
+    text-transform: uppercase;
+    font-weight:bold;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+#reddit-embed {
+    margin-top: 2rem;
+}
+
+
+
+
+/* MAIN PAGE SLIDESHOW */
+.carousel-inner {
+    height: 500px;
+    width:100%;
+}
+
+.carousel-inner carousel.item {
+    max-height:100%;
+    max-width:100%;
+}
+
+.carousel-inner carousel.item img {
+    width: 100%;
+    min-height:100%;
+    max-height:none;
+}
+
+#caption  {
+    top:65%;
+    left:5%;
+    text-align:left;
+    transform: translateY(-40%);
+    color:black;
+
+}
+.carousel-inner .carousel-caption {
+    top:70%;
+    left:5%;
+    text-align:left;
+    transform: translateY(-40%);
+
+}
+
+/* MAIN PAGE CONTENT*/
+.jumbotron {
+    background-color: #fff;
+    margin:0px;
+}
+
+.flex-container {
+    display:flex;
+    align-items:center;
+}
+
+.column {
+    flex:45%;
+    padding: 0px 4rem;
+
+}
+.column > h3 {
+    font-weight:bold;
+}
+
+.column > img {
+    width:100%;
+    float:left;
+}
+
+.jumbotron-fluid {
+    color: white;
+    background-color: #000;
+    height: 60px;
+    padding-top: 20px;
+}
+
+.container1 {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#copyright {
+    text-align:center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+/* KEYBOARD LAYOUT */
+
+.col-sm-6 {
+    margin: 10px 0px;
+}
+
+.card img {
+    height:auto;
+    max-height:250px;
+    width:100%;
+}
+
+.card-img-overlay {
+    text-align:center;
+    text-wrap:normal;
+    top: 30%;
+}
+.card-title {
+    font-weight:bolder;
+    text-align:center;
+}
+
+.card-title1 {
+    font-weight:bolder;
+    text-transform: uppercase;
+    text-align:center;
+    letter-spacing: 7px;
+}
+
+
+/* SWITCHES LAYOUT*/
+
+#switches {
+    vertical-align:middle;
+}
+
+#linear {
+    width: 100%;
+    height:auto;
+}
+
+#tactile {
+    width: 100%;
+    height:auto;
+}
+
+#clicky {
+    width: 100%;
+    height:auto;
+}
+
+/* ABOUT US LAYOUT*/
+
+#about {
+    background:#fff;
+    color: white;
+    margin: 10px 200px;
+    padding: 50px;
+}
+
+#about-container {
+    text-align: center;
+}
+.about-text {
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding:20px;
+}
+
+.about-title {
+    font-weight:bolder;
+    text-transform:uppercase;
+    letter-spacing: 10px;
+    word-spacing: 5px;
+}
+
+#about-pic {
+    width:100%;
+}

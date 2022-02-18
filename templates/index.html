@@ -1,0 +1,106 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Guide to Mechanical Keyboards
+{% endblock %}
+
+{% block main %}
+
+        <script>
+          window.addEventListener('DOMContentLoaded',function() {
+            document.querySelector("#customsearch").addEventListener("submit",function() {
+              search = document.getElementById("custom").value;
+              link = "https://www.reddit.com/r/MechanicalKeyboards/search?q=" + search + "&restrict_sr=1";
+              window.open(link, '_blank');
+            });
+          });
+        </script>
+
+      <!-- CUSTOM SEARCH BAR-->
+      <div class="jumbotron" id="search_bar">
+        <div class="container">
+          <h2> What's Your Keyboard Query Today?</h2>
+          <form method="post" type="submit" id="customsearch">
+            <input class="form-control mr-sm-2" id="custom" type="search" placeholder="I want to know about..." aria-label="Search" autocomplete="off">
+          </form>
+        </div>
+        <iframe id="reddit-embed" src="https://www.redditmedia.com/r/MechanicalKeyboards/comments/knnflb/rmechanicalkeyboards_ask_any_question_get_an/?ref_source=embed&amp;ref=share&amp;embed=true" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="207" width="640" scrolling="no"></iframe>
+
+
+      </div>
+
+      <!-- CAROUSEL PHOTO SLIDESHOW-->
+      <div class='container'>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://mechanicalkeyboards.com/shop/images/products/large_KBDTOFUcase0017_6.jpg" class="d-block w-100" alt="KDBfans Tofu 65%">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 style="font-weight:bold"> KDBfans Tofu 65% </h3>
+                <p>Entry-Level Custom Keyboard for Newbies.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://cdn.shopify.com/s/files/1/0059/0630/1017/t/5/assets/pf-70dcaaae--KeychronK3ultraslimHotswappablewirelessmechanicalkeyboardMacWindowsiOSAndroidKeychronlowprofileOpticalGateronlowprofilemechanicalswitchredbluebrownwhiteblackorangedesktopsetup2.jpg?v=1615950839" class="d-block w-100" alt="...">
+              <div id="caption" class="carousel-caption d-none d-md-block">
+                <h3 style="font-weight:bold"> Keychron K3 Low-Profile 75% </h3>
+                <p>Ultra-slim Wireless Keyboard.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://media.memoryexpress.com/Assets/Products/MX00114912/02-GMMK-Pro-RGB-modular-mechanical-keyboard.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 style="font-weight:bold"> Glorious GMMK Pro 75% </h3>
+                <p>Ultra-premium Gasket Mounted Custom Keyboard.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- FURTHER DESCRIPTION -->
+      <div class="jumbotron">
+        <div class="flex-container">
+          <div class="column">
+            <h3> Beginner's Guide to Mechanical Keyboards</h3>
+            <p> New to mechanical keyboards but unsure of where to start? Here's a brief but consise guide to get you started!</p>
+            <button type="button" class="btn btn-dark" id="guide">View Guide</button>
+          </div>
+          <div class="column">
+            <img id="components" src="https://www.maketecheasier.com/assets/uploads/2019/08/custom-mechanical-keyboard-guide-parts.jpg">
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron">
+        <div class="flex-container">
+          <div class="column">
+            <img id="components" src="https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c0dbc411-b8ba-4f9e-a30c-060a6a5964ae/mechanical-keyboards-layout-comparison-ansi-iso.png">
+          </div>
+          <div class="column">
+            <h3> Keyboard Layouts </h3>
+            <p> Still stumped on deciding and want to know what kind of keyboard layout will suit you? </p>
+            <button type="button" class="btn btn-dark" id="keyboards">Click Here</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="jumbotron">
+        <div class="flex-container">
+          <div class="column">
+            <h3> Switches</h3>
+            <p> Linear, Tactile or Clicky? Travel Distance? Sound Test?</p>
+            <button type="button" class="btn btn-dark" id="switches">Find Out More</button>
+          </div>
+          <div class="column">
+            <img id="components" src="https://www.pcbattlestations.com/wp-content/uploads/2019/11/switch-types.jpg">
+          </div>
+        </div>
+      </div>
+{% endblock %}
